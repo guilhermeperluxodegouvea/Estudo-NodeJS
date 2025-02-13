@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "Video 1",
+    "description": "Lorem Ipsum",
+    "duration": 60
+}
+
+###
+
+GET http://localhost:3333/videos?search=exemple
+
+###
+
+PUT http://localhost:3333/videos/
+Content-Type: application/json
+
+{
+    "title": "Video 2",
+    "description": "Lorem Ipsum",
+    "duration": 120
+}
+
+###
+
+DELETE http://localhost:3333/videos/:id
